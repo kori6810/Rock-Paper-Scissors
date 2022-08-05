@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <!-- LINKS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <div class="container__header">
+      <img src="images/logo.svg" alt="" class="container__logo">
+      <div class="container__score-box">
+        <p class="container__score-header">Score</p>
+        <p class="container__score">12</p>
+      </div>
+
+
+    </div>
+    <div class="action-box ">
+      <button class="color-circle color-circle--paper action" value="paper">
+        <div class="circle">
+          <img src="images/icon-paper.svg" alt="" class="
+          action-icons">
+        </div>
+      </button>
+
+      <button class="color-circle color-circle--scissors action" value="scissors">
+        <div class="circle">
+          <img src="images/icon-scissors.svg" alt=""  class="action-icons">
+          
+        </div>
+      </button>
+
+      <button class="color-circle color-circle--rock action" value="rock">
+        <div class="circle">
+          
+          <img src="images/icon-rock.svg " alt="" class="action-icons">
+        </div>
+      </button>
+
+      <img src="images/bg-triangle.svg" alt="" class="bg-triangle">
+      
+    </div>
+    <div class="game hidden ">
+      <div class="game__user">
+        
+        
+
+      </div>
+      <div class="game-end hidden">
+        
+        <div class="game-end__game-result ">
+          <h2 class="game-end__result-heading">
+            you win
+          </h2>
+          <button class="play-again btnPlayAgain">
+            PLay again
+          </button>
+        </div>
+        
+  
+        
+      </div>
+      <div class="game__computer">
+        
+        <div class="empty game__mood">
+        </div>
+        
+      </div>
+    </div>
+    
+    
+  </div>
+  <div class="overlay hidden">
+    <div class="rules-box">
+      <div class="rules-box__header">
+        <h2 class="rules-box__heading">rules</h2>
+        <img src="images/icon-close.svg" class="btnClose" alt="">
+  
+      </div>
+      
+      <img src="images/image-rules.svg" class ="rules-box__content" alt="">
+      
+    </div>
+  </div>
+  <button class="ruleBtn">
+    rules
+  </button>
+
+  
+ <script src="script.js"></script>
+</body>
+</html>
